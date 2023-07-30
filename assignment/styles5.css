@@ -1,0 +1,63 @@
+<link rel="stylesheet"
+href="flex5.html">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container for image and paragraphs */
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Image style */
+    img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      margin: 0;
+    }
+
+    /* First paragraph style */
+    p:first-child {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      margin: 0;
+    }
+
+    /* Second paragraph style */
+    p:last-child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+
+    /* Fixed navigation bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }

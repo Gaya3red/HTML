@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container for image and paragraphs */
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Image style */
+    img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      margin: 0;
+    }
+
+    /* First paragraph style */
+    p:first-child {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      margin: 0;
+    }
+
+    /* Second paragraph style */
+    p:last-child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+    <p>This is the first paragraph of text.</p>
+    <p>This is the second paragraph of text, centered horizontally and vertically.</p>
+  </div>
+</body>
+</html>

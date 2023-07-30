@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Flex container for the overall layout */
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header styling */
+    header {
+      height: 80px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Navigation menu styling */
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+    }
+
+    /* Main content area styling */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 400px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    /* Three boxes styling */
+    .box {
+      flex: 1;
+      height: 150px;
+      margin: 10px;
+    }
+
+    .box:nth-child(1) {
+      background-color: #FF5733;
+    }
+
+    .box:nth-child(2) {
+      background-color: #33FF57;
+    }
+
+    .box:nth-child(3) {
+      background-color: #5733FF;
+    }
+
+    /* Footer styling */
+    footer {
+      height: 60px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </main>
+    <footer>
+      <p>This is the footer.</p>
+    </footer>
+  </div>
+</body>
+</html>
